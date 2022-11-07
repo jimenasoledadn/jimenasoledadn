@@ -1,0 +1,38 @@
+/*
+ ============================================================================
+ Name        : JimeClass5.c
+ Author      : Jimena
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int numeros[7];
+	int x = 0; //para inicializar la posicion en CERO a la x
+
+	// Pedirle al usuario que ingrese 5 numeros e imprimirlas
+	//Ejemplo 1:
+	do
+	{
+		numeros[x] = 5;
+		x = x+1; // para que vaya cambiando la posicion del valor de x
+
+	}while(x<7);
+
+	//printf("%d ", &numeros[i]);
+
+	for(int i=0 ; i<7 ; i++)
+	{
+		numeros[i] = 5;
+		i = i+1;
+		printf("%d ", &numeros[i]);
+	}
+
+
+	return EXIT_SUCCESS;
+}

@@ -1,0 +1,7 @@
+11:28:18 **** Incremental Build of configuration Debug for project 4.3.2022 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\realCarga.o" "..\\src\\realCarga.c" 
+gcc -o 4.3.2022.exe "src\\4.3.2022.o" "src\\carga.o" "src\\realCarga.o" "src\\validacion.o" 
+
+11:28:19 Build Finished. 0 errors, 0 warnings. (took 353ms)
+

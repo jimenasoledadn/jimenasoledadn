@@ -1,0 +1,26 @@
+/*
+ ============================================================================
+ Name        : JimeClass5.c
+ Author      : Jimena
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int numeros[] = 7;
+	int x;
+
+	do
+	{
+		numeros[x] = 5;
+	}while(x<7);
+
+
+
+	return EXIT_SUCCESS;
+}

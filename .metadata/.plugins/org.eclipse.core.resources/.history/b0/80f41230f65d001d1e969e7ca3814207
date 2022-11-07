@@ -1,0 +1,49 @@
+/*
+ ============================================================================
+ Name        : 2022.c
+ Author      : Jimena
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ Ejercicio 5-3: Realizar una función que reciba como parámetros un array de enteros y
+				un entero por referencia. La función calculara el máximo valor de ese array y utilizara
+				el valor por referencia para retornar ese valor.
+
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#define TAM 3
+
+int maximoValor(int arrayEnteros[], int tam, int* numMaximo);
+
+int main(void) {
+	setbuf(stdout, NULL);
+	int array[TAM] = {2, 5, 3};
+	int numMaximo;
+	int maximo;
+	maximo = maximoValor(array, TAM, numMaximo);
+	printf("%d", maximo);
+	return EXIT_SUCCESS;
+}
+
+int maximoValor(int arrayEnteros[], int tam, int* numMaximo)
+{
+	int retorno = -1;
+	int bufferMax;
+
+	if(arrayEnteros != NULL && numMaximo != NULL && tam > 0)
+	{
+		bufferMax = arrayEnteros[0];
+		for(int i=0; i<tam ; i++)
+		{
+			if(bufferMax < *numMaximo)
+			{
+				*numMaximo = arrayEnteros[i];
+			}
+			retorno = 0;
+		}
+	}
+	return retorno;
+}

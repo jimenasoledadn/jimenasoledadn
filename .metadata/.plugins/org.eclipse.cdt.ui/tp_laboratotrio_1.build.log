@@ -1,0 +1,6 @@
+18:29:31 **** Incremental Build of configuration Debug for project tp_laboratotrio_1 ****
+Info: Internal Builder is used for build
+gcc -o tp_laboratotrio_1.exe "src\\main_tp_laboratotrio_1.o" "src\\tp_laboratorio_1.o" 
+
+18:29:31 Build Finished. 0 errors, 0 warnings. (took 247ms)
+

@@ -1,0 +1,8 @@
+22:43:45 **** Rebuild of configuration Debug for project 3.5.2022 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\restas.o" "..\\src\\restas.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\3.5.2022.o" "..\\src\\3.5.2022.c" 
+gcc -o 3.5.2022.exe "src\\3.5.2022.o" "src\\restas.o" 
+
+22:43:45 Build Finished. 0 errors, 0 warnings. (took 469ms)
+

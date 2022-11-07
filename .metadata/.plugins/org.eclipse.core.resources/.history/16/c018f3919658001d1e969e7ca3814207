@@ -1,0 +1,37 @@
+/*
+ ============================================================================
+ Name        : 2022.c
+ Author      : Jimena
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+Ejercicio 6-3: Realizar un programa que permita el ingreso de datos de 15 empleados
+				legajo (coincidente con el índice), edad, salario, sexo (1-Femenino, 2-Masculino, 3-No
+				binario). Realizar carga secuencial. Calcular el sueldo promedio. Listar a los
+				empleados no binarios.
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#define TAM 10
+
+int main(void) {
+	setbuf(stdout, NULL);
+	int i;
+	int edades[TAM];
+	float salarios[TAM];
+	char sexo[TAM];
+
+	for(i=0 ; i<TAM ; i++)
+	{
+		printf("Ingrese edad: \n");
+		scanf("%d", &edades);
+		printf("Ingrese salario: \n");
+		scanf("%f", &salarios);
+		printf("Ingrese el sexo: \n");
+		scanf("%c", &sexo);
+	}
+
+	return EXIT_SUCCESS;
+}

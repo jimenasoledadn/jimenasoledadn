@@ -1,0 +1,9 @@
+17:14:29 **** Incremental Build of configuration Debug for project Hola mundo ****
+Info: Internal Builder is used for build
+gcc -o "Hola mundo.exe" "src\\Clase1.2022.o" "src\\Hola mundo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Hola mundo.o: in function `main':
+C:\Users\jimes\eclipse-workspace\Hola mundo\Debug/../src/Hola mundo.c:15: multiple definition of `main'; src\Clase1.2022.o:C:\Users\jimes\eclipse-workspace\Hola mundo\Debug/../src/Clase1.2022.c:15: first defined here
+collect2.exe: error: ld returned 1 exit status
+
+17:14:29 Build Failed. 2 errors, 0 warnings. (took 202ms)
+

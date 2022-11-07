@@ -1,0 +1,25 @@
+22:43:54 **** Rebuild of configuration Debug for project tp_laboratorio_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp_laboratorio_2.o" "..\\src\\tp_laboratorio_2.c" 
+..\src\tp_laboratorio_2.c: In function 'main':
+..\src\tp_laboratorio_2.c:75:13: warning: implicit declaration of function 'mostrarPersonas'; did you mean 'mostrarPersona'? [-Wimplicit-function-declaration]
+   75 |      printf(mostrarPersonas(list, LEN));
+      |             ^~~~~~~~~~~~~~~
+      |             mostrarPersona
+..\src\tp_laboratorio_2.c:75:13: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+   75 |      printf(mostrarPersonas(list, LEN));
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |             |
+      |             int
+In file included from ..\src\tp_laboratorio_2.c:11:
+c:\mingw\include\stdio.h:462:46: note: expected 'const char *' but argument is of type 'int'
+  462 | _CRTIMP __cdecl __MINGW_NOTHROW  int printf (const char *, ...);
+      |                                              ^~~~~~~~~~~~
+..\src\tp_laboratorio_2.c: In function 'addEmployee':
+..\src\tp_laboratorio_2.c:147:40: error: 'id' undeclared (first use in this function)
+  147 |         if(findEmployeeById(list, len, id))
+      |                                        ^~
+..\src\tp_laboratorio_2.c:147:40: note: each undeclared identifier is reported only once for each function it appears in
+
+22:43:54 Build Failed. 1 errors, 2 warnings. (took 160ms)
+
